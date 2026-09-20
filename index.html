@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Cuts Barber Shop. Cortes que definen tu estilo.">
+    <title>Royal Cuts | Barber Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="icons/logo.svg" class="logo" alt="Logo de Royal Cuts">
+        <nav id="navbar">
+            <div class="nav-links" id="nav-links">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#galeria">Galería</a>
+                <a class="nav-link" href="#footer">Contacto</a>
+            </div>
+        </nav>
+        <a class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+            <img src="icons/menu.svg" alt="Menú de navegación">
+        </a>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-base hero-home fade-in-up">
+            <h1 class="white-text">Tu estilo, <span class="special-text new-line">nuestra pasión.</span></h1>
+            <span class="bold white-text">CORTES <span class="special-text">•</span> BARBA <span class="special-text">•</span> ESTILO</span>
+            <button class="cta special-text">Reserva tu cita</button>
+        </section>
+
+        <section id="inicio" class="fade-in-up">
+            <h2 class="font-variant">Más que un corte, <span class="special-text new-line">una experiencia.</span></h2>
+            <p>En Royal Cuts creemos que un buen corte no solo cambia tu apariencia, sino también tu actitud. Nuestro equipo de barberos profesionales está listo para resaltar tu mejor versión.</p>
+        </section>
+
+        <div class="divider fade-in-up">
+            <img src="icons/phone.svg" class="icon" alt="Separador decorativo">
+        </div>
+
+        <section id="servicios" class="fade-in-up">
+            <h2 class="section-title font-variant">Nuestros Servicios</h2>
+            <p class="section-title-text">Todo lo que necesitas para tu mejor versión.</p>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-image" src="images/corte-de-pelo-1.jfif" alt="Corte de pelo">
+                    <div class="left-container">
+                        <h3>CORTES DE PELO</h3>
+                        <p class="legend">Desde $23.000COP</p>
+                        <a href="pelo.html">Ver más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/servicio-barba-4.jfif" alt="Servicio de barba">
+                    <div class="left-container">
+                        <h3>BARBA</h3>
+                        <p class="legend">Desde $20.000COP</p>
+                        <a href="barba.html">Ver más</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-image" src="images/servicio-cejas-3.jfif" alt="Perfilado de cejas">
+                    <div class="left-container">
+                        <h3>CEJAS</h3>
+                        <p class="legend">Desde $15.000COP</p>
+                        <a href="cejas.html">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider fade-in-up">
+            <img src="icons/phone.svg" class="icon" alt="Separador decorativo">
+        </div>
+
+        <section id="galeria" class="fade-in-up">
+            <div class="responsive-divider">
+                <div>
+                    <h2 class="font-variant">Estilo en <span class="special-text new-line">cada detalle.</span></h2>
+                    <a href="galeria.html">Ver galería <img src="icons/arrow.svg" alt="" style="height: 10px;"></a>
+                </div>
+                <div class="imagenes-galeria">
+                    <img class="imagen-galeria" src="images/corte-de-pelo-1.jfif" alt="Imagen de galería 1">
+                    <img class="imagen-galeria" src="images/servicio-barba-1.jfif" alt="Imagen de galería 2">
+                    <img class="imagen-galeria" src="images/servicio-cejas-1.jfif" alt="Imagen de galería 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="responsive-divider">
+            <img class="logo1" src="icons/logo.svg" alt="Logo de Royal Cuts">
+            <div>
+                <span class="special-text new-line white-space-text">ROYAL CUTS BARBER SHOP</span>
+                <div class="new-line">
+                    <img src="icons/ubication.svg" class="icon" alt="Ubicación">
+                    <span class="white-space-text">2a, fake ubication, 123</span>
+                </div>
+                <div class="new-line white-space-text">
+                    <img src="icons/phone.svg" class="icon" alt="Teléfono">
+                    <span class="white-space-text">333 333 3333</span>
+                </div>
+                <span class="new-line">Lunes - Viernes: 9am - 8pm</span>
+                <span class="new-line">Sábados: 10am - 6pm</span>
+                <span class="new-line">Domingos: Cerrado</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+            var isExpanded = navLinks.classList.contains('active');
+            this.setAttribute('aria-expanded', isExpanded);
+        });
+    </script>
+</body>
+</html>

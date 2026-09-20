@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicio de Barba - Royal Cuts Barber Shop">
+    <title>Servicio de Barba | Royal Cuts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="icons/logo.svg" class="logo" alt="Logo de Royal Cuts">
+        <nav id="navbar">
+            <div class="nav-links" id="nav-links">
+                <a class="nav-link" href="index.html#inicio">Inicio</a>
+                <a class="nav-link" href="index.html#servicios">Servicios</a>
+                <a class="nav-link" href="index.html#galeria">Galería</a>
+                <a class="nav-link" href="#footer">Contacto</a>
+            </div>
+        </nav>
+        <a class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+            <img src="icons/menu.svg" alt="Menú de navegación">
+        </a>
+    </header>
+
+    <main>
+        <section id="barba-hero" class="hero-base hero-barba fade-in-up">
+            <h1 class="white-text text-h2">Servicio de barba</h1>
+        </section>
+
+        <section id="info" class="fade-in-up">
+            <div class="responsive-divider">
+                <div>
+                    <h2 class="font-variant text-h4">Barba definida, estilo impecable</h2>
+                    <p>Dale a tu barba la forma y definición que merece. Perfilamos, recortamos y detallamos cada zona para conseguir un acabado limpio y acorde a tu estilo.</p>
+                    <ul>
+                        <li>Perfilado y definición</li>
+                        <li>Recorte y modelado</li>
+                        <li>Toalla caliente y acabado</li>
+                    </ul>
+                    <div>
+                        <span class="text-h6">Desde</span>
+                        <span class="new-line bold text-h4">$20.000</span>
+                    </div>
+                </div>
+                <img class="responsive-image" src="images/servicio-barba-4.jfif" alt="Barbero perfilando una barba">
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="responsive-divider">
+            <img class="logo1" src="icons/logo.svg" alt="Logo de Royal Cuts">
+            <div>
+                <span class="special-text new-line white-space-text">ROYAL CUTS BARBER SHOP</span>
+                <div class="new-line">
+                    <img src="icons/ubication.svg" class="icon" alt="Ubicación">
+                    <span class="white-space-text">2a, fake ubication, 123</span>
+                </div>
+                <div class="new-line white-space-text">
+                    <img src="icons/phone.svg" class="icon" alt="Teléfono">
+                    <span class="white-space-text">333 333 3333</span>
+                </div>
+                <span class="new-line">Lunes - Viernes: 9am - 8pm</span>
+                <span class="new-line">Sábados: 10am - 6pm</span>
+                <span class="new-line">Domingos: Cerrado</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+            var isExpanded = navLinks.classList.contains('active');
+            this.setAttribute('aria-expanded', isExpanded);
+        });
+    </script>
+</body>
+</html>
